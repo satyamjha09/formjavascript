@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form in Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <form action="">
+        <label for="">Name</label>
+        <input type="text" id="fname" onfocus="focusFunction(this)" onblur="blurFunction(this)">
+
+        <label for="">Class</label>
+        <input type="text" id="" onfocus="focusFunction(this)" onblur="blurFunction(this)">
+
+        <label for="">Country</label>
+
+        <select id="" onfocus="focusFunction(this)" onblur="blurFunction(this)">
+            <option value="">India</option>
+            <option value="">Paskitan</option>
+            <option value=""> Bangladesh </option>
+            <option value=""> Sri Lanka </option>
+            <option value=""> Nepal </option>
+        </select>
+
+    </form>
+
+    <script >
+        function focusFunction(element) {
+            element.style.background = "#f3f3f3";
+        }
+        function blurFunction(element){
+            element.style.background = "";
+        }
+    </script>
+    
+</body>
+</html>
